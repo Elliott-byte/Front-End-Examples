@@ -142,6 +142,7 @@ ul {
 .detail_6 {
   margin: 1rem 0;
   font-size: 1.2rem;
+  display: grid;
 }
 
 ol {
