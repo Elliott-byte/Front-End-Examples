@@ -1,16 +1,7 @@
 @import url("./base.css");
+@import url("./base2.css");
+@import url("./base3.css");
 
-body {
-  font-size: 10px;
-}
-.header {
-  width: 100vw;
-  height: 10vh;
-  font-size: 2rem;
-  font-family: Georgia;
-  display: flex;
-  align-items: center;
-}
 .gridbox {
   display: grid;
   grid-template-columns: repeat(10, 1fr);

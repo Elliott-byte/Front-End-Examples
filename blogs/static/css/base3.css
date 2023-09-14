@@ -1,0 +1,8 @@
+.header {
+  width: 100vw;
+  height: 10vh;
+  font-size: 2rem;
+  font-family: Georgia;
+  display: flex;
+  align-items: center;
+}
