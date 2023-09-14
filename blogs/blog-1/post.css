@@ -145,6 +145,9 @@ ol {
   font-size: 0.8rem;
   text-decoration: underline;
 }
+.footer {
+  margin-top: 8rem;
+}
 .foot_content {
   color: #9b9999;
 }
