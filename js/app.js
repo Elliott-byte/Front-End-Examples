@@ -31,7 +31,9 @@ function activeClass() {
 		const sectionTop = section.getBoundingClientRect().top;
 		const sectionBottom = section.getBoundingClientRect().bottom;
 		const navItem = navList.children[i];
-		if (sectionTop === 0 && sectionBottom >= 0) {
+		console.log("top", sectionTop)
+		console.log(sectionBottom)
+		if (sectionTop <= 10 && sectionBottom >= 0) {
 			section.classList.add('your-active-class');
 			navItem.classList.add('active');
 		} else {

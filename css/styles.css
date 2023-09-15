@@ -248,3 +248,10 @@ section.your-active-class .landing__container::after {
   color: #fff;
   transition: ease 0.3s all;
 }
+
+@media only screen and (max-width: 450px) {
+  .navbar__menu {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+}
