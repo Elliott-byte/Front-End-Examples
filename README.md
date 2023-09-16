@@ -1,13 +1,3 @@
-# My second project from Udacity Front-end course.
-
-- [Project Usage](#usage)
-- [Project Function Description](#usage)
-
-# Usage
-
-Open the index.html in your browser
-
-# Description
-
-1. Click the section botton above, the screen will scroll to the according part of the web.
-2. Scroll the whole website by your self, the botton will active automatically based on which section you are reading.
+use npm -i install all related packages.
+run npm run start to start the server.
+the website will start on http://127.0.0.1:3000/index.html
