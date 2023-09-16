@@ -61,5 +61,5 @@ app.post('/entry', (req, res) => {
 
 // Setup Server
 app.listen(PORT, () => {
-	console.log(`Server listenign on port ${PORT}`);
+	console.log(`Server listening on port ${PORT}`);
 })
