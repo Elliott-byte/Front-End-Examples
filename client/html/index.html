@@ -17,23 +17,27 @@
       <div class="app_title">Travel Planner</div>
       <div class="card_list">
         <div class="card">
-          <div class="img"><img src="../media/paris.jpg" alt="Paris" /></div>
+          <div class="img">
+            <img id="card_img" src="../media/paris.jpg" alt="Paris" />
+          </div>
           <div class="card_detail">
-            <div class="card_title">My trip to:</div>
-            <div class="card_date">Departing:</div>
+            <div id="card_title" class="card_title">My trip to:</div>
+            <div id="card_date" class="card_date">Departing:</div>
             <div class="buttion_group">
               <div class="btn">Save Trip</div>
               <div class="btn">Remove Trip</div>
             </div>
-            <div class="due_date">days away</div>
-            <div class="card_weather">Typical weather for then is:</div>
+            <div id="due_date" class="due_date">days away</div>
+            <div id="card_weather" class="card_weather">
+              Typical weather for then is:
+            </div>
           </div>
         </div>
         <div class="query_card">
           <div class="location_group">
             <div class="query_location_title">My Trip to:</div>
             <div
-              class="query_location_input"
+              id="query_location_input"
               contenteditable="true"
               placeholder="Enter Location"
             ></div>
@@ -41,19 +45,35 @@
           <div class="date_group">
             <div class="query_date_title">Departing:</div>
             <div
-              class="query_date_input"
+              id="query_date_input"
               contenteditable="true"
-              placeholder=" MM/DD/YYYY"
+              placeholder=" DD/MM/YYYY"
             ></div>
           </div>
           <div class="query_button_group">
-            <div class="btn query_btn" onclick="handleAdd(event)">
+            <div class="btn query_btn" onclick="return Client.handleAdd(event)">
               save trip
             </div>
-            <div class="btn query_btn">remove trip</div>
+            <div class="btn query_btn" onclick="return Client.handleRemove()">
+              remove trip
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    // Check that service workers are supported
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .then((registration) => {
+            console.log("SW registered successfuly: ", registration);
+          });
+      });
+    } else {
+      console.log("Service Working not supported");
+    }
+  </script>
 </html>

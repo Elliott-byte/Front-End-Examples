@@ -118,8 +118,8 @@
   align-items: center;
 }
 
-.query_location_input:empty::before,
-.query_date_input:empty::before {
+#query_location_input:empty::before,
+#query_date_input:empty::before {
   content: attr(placeholder);
 }
 
