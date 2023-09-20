@@ -32,14 +32,24 @@
         <div class="query_card">
           <div class="location_group">
             <div class="query_location_title">My Trip to:</div>
-            <div class="query_location_input">Enter Location</div>
+            <div
+              class="query_location_input"
+              contenteditable="true"
+              placeholder="Enter Location"
+            ></div>
           </div>
           <div class="date_group">
             <div class="query_date_title">Departing:</div>
-            <div class="query_date_input">MM/DD/YYYY</div>
+            <div
+              class="query_date_input"
+              contenteditable="true"
+              placeholder=" MM/DD/YYYY"
+            ></div>
           </div>
           <div class="query_button_group">
-            <div class="btn query_btn">save trip</div>
+            <div class="btn query_btn" onclick="handleAdd(event)">
+              save trip
+            </div>
             <div class="btn query_btn">remove trip</div>
           </div>
         </div>

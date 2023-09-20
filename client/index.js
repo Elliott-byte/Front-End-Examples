@@ -1,8 +1,8 @@
 import './styles/style.scss';
-import { handleSubmit } from './js/handleSubmit.js';
+import { handleAdd } from './js/handleAdd';
 import { parisImg } from './media/paris.jpg';
 
 export {
 	// parisImg,
-	handleSubmit
+	handleAdd
 }

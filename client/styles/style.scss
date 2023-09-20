@@ -76,13 +76,6 @@
   font-size: 0.7rem;
 }
 
-.btn {
-  background-color: white;
-  padding: 0.2rem;
-  border-radius: 0.2rem;
-  border: 2px solid black;
-}
-
 .due_date {
   font-size: 0.8rem;
 }
@@ -105,6 +98,7 @@
 .query_date_title {
   font-weight: bold;
   font-size: 1.2rem;
+  padding-right: 0.4rem;
 }
 
 .location_group,
@@ -122,6 +116,18 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.query_location_input:empty::before,
+.query_date_input:empty::before {
+  content: attr(placeholder);
+}
+
+.btn {
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  border: 2px solid black;
 }
 
 .query_btn {
